@@ -178,3 +178,9 @@ if DEBUG is False:
         }
 
     }
+
+if os.getcwd() == '/app':
+    SECURE_PROXI_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
+    SECURE_SSL_REDIRECT = True
+    DEBUG = False
+    
