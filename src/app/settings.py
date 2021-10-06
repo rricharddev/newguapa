@@ -5,14 +5,14 @@ import environ
 
 env = environ.Env()
 
+
 # Leer el archivo .env
 environ.Env.read_env()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "my_secret_key_value"
 DEBUG = True
-ALLOWED_HOSTS = [ 'oficenter.ar',
-    'www.oficenter.ar']
+ALLOWED_HOSTS = [ 'oficenter.ar']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
