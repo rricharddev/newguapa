@@ -11,7 +11,7 @@ environ.Env.read_env()
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "my_secret_key_value"
 DEBUG = True
-ALLOWED_HOSTS = ['www.oficenter.ar']
+ALLOWED_HOSTS = ['*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -57,6 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'app.urls'
+
 
 TEMPLATES = [
     {
@@ -183,4 +184,4 @@ if os.getcwd() == '/app':
     SECURE_PROXI_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
     SECURE_SSL_REDIRECT = True
     DEBUG = False
-    
+
