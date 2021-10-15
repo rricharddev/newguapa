@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/jquery.countdown.css">
+        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../static/css/styleContador.css">
+    <div class="wrapper">
+        <div class="opacity"></div>
+         <div class="gravity">
+            <div class="container">
+                <div class=" row">
+                    <div class="col-md-12">
+                   
+                    <P>Our website is coming soon</P>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div id="countdown"></div>
+ 
+         <div class="email">
+            <div class="container">
+                <div class=" row">
+                    <div class="col-md-12">
+                        <p>NOTIFY ME WHEN IT’S READY</p>
+                        
+                        <form action="#" method="post">
+                             <input type="email" placeholder="Enter Your Email Adress">
+                             <input type="submit" value="Send">
+                         </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+ 
+         <div class="social-icon">
+             <div class="container">
+                 <div class=" row">
+                    <div class="col-md-12">
+                         <div class="icon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                         </div>
+ 
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+  
+</body>
+
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.countdown.js"></script>
+<script src="../static/js/active.js"></script>
+
+<script type="text/javascript">
+/*
+var fechaContador= new Date("Jan 5, 2022 15:37:25").getTime()
+var intervalo=setInterval(function(){
+var fechaActual=new Date().getTime();
+var distancia=fechaContador-fechaActual;
+
+var dias= Math.floor(distancia/(1000*60*60*24))
+var horas=Math.floor((distancia%(1000*60*60*24))/(1000*60*60*24))
+var minutos=Math.floor((distancia%(1000*60*60))/(1000*60))
+var segundos= Math.floor((distancia%(1000*60))/(1000))
+
+document.getElementById("countdown").innerHTML=dias+"d "+horas+"h "+minutos+"m "+segundos+"s ";
+if(distancia<0)
+{
+  clearInterval(intervalo)
+  document.getElementById("countdown").innerHTML="Fin";
+
+}
+},1000)
+*/
+</script>
+  {% endblock %}
+
+
+
+
