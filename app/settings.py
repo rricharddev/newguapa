@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY="my_secret_key_value"
 DEBUG=env('DEBUG')
 
-ALLOWED_HOSTS =[ 'oficenter.ar','www.oficenter.ar']
+ALLOWED_HOSTS =[ 'oficenter.ar','www.oficenter.ar','*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'core',
-    'cart',
+    'Tienda',
+    
+    'django.contrib.humanize',
+   
     'crispy_forms',
 
 ]
-
+CRISPY_TEMPLATE_PACK='bootstrap4'
 #DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
 #NOTIFY_EMAIL = env('NOTIFY_EMAIL')
 
@@ -141,7 +143,7 @@ ACCOUNT_USERNAME_REQUIRED =False
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
