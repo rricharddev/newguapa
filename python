@@ -1,0 +1,4 @@
+Operations to perform:
+  Apply all migrations: Tienda, account, admin, auth, contenttypes, sessions, sites, socialaccount
+Running migrations:
+  No migrations to apply.
