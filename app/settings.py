@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'Tienda',
+
+    
     
     'django.contrib.humanize',
    
