@@ -29,6 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Application definition
 
 INSTALLED_APPS = [
+    'app',
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -153,15 +154,24 @@ USE_L10N = True
 USE_TZ = True
 
 
-
-
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = os.path.join(BASE_DIR, 'Tienda/static')
-
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+
+#STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'Tienda/static')
+
+
+#MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+#MEDIA_URL = '/media/'
 
 
 

@@ -9,7 +9,7 @@ def home(request):
     data ={
         'productos' : productos
     }
-    return render(request, 'app/home.html',data)
+    return render(request, 'home.html',data)
 
 
 def contacto(request):
@@ -25,13 +25,13 @@ def contacto(request):
             data["mensaje"]= "contacto guardado"
         else:
             data["form"]=formulario
-    return render(request, 'app/contacto.html',data)
+    return render(request, 'contacto.html',data)
 #form es una variable queContactoForm es una 
 
 
 
 def galeria(request):
-    return render(request, 'app/galeria.html')
+    return render(request, 'galeria.html')
 
 
 
