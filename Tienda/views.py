@@ -26,7 +26,9 @@ def contacto(request):
         else:
             data["form"]=formulario
     return render(request, 'contacto.html',data)
-#form es una variable queContactoForm es una 
+    
+#
+
 
 
 
