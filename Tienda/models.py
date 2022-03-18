@@ -35,3 +35,5 @@ class Contacto(models.Model):
 
     def __str__(self):
         return self.nombre
+
+# Create your models here.

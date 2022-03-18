@@ -3,13 +3,16 @@ from.models import Producto
 from.forms import ContactoForm
 
 # Create your views here.
+
 def home(request):
-    
+     
     productos = Producto.objects.all()
     data ={
         'productos' : productos
     }
-    return render(request, 'home.html',data)
+    return render(request, 'Tienda/home.html',data)
+
+    
 
 
 def contacto(request):
@@ -25,15 +28,10 @@ def contacto(request):
             data["mensaje"]= "contacto guardado"
         else:
             data["form"]=formulario
-    return render(request, 'contacto.html',data)
-    
-#
-
-
+    return render(request, 'Tienda/contacto.html',data)
 
 
 def galeria(request):
-    return render(request, 'galeria.html')
+    return render(request,'Tienda/galeria.html')
 
-
-
+# Create your views here.

@@ -9,3 +9,16 @@ class ContactoForm(forms.ModelForm):
 
         ##listado de campos del modelo de Contacto despues lo pasamos a la vista
 
+
+
+    
+
+
+    
+#
+
+
+
+
+
+
