@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block jsTienda %}
+{% block js %}
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script>
     $(document).ready(function() {
@@ -22,15 +22,15 @@
 
 {% block content %}
  
-<div class="slider">
+<div class="slider ">
      <div>
-        <img src="{#}"  alt="">  
+        <img src="{% static 'Tienda/img/banner/Banner 2.png' %}"  alt="">  
     </div>
     <div> 
-        <img src="{% static 'Tienda/img/banner/banner2.jpg' %}" alt="">
+        <img src="{% static 'Tienda/img/banner/Banner 3.png' %}" alt="">
     </div>
     <div>
-        <img src="{#}" alt="">
+        <img src="{% static 'Tienda/img/banner/Banner 4.png' %}" alt="">
     </div>
 </div>
 
