@@ -1,17 +1,11 @@
 
 
 import os
-import environ
 
-env = environ.Env()
-
-
-# Leer el archivo .env
-environ.Env.read_env()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY="my_secret_key_value"
-DEBUG=env('DEBUG')
+SECRET_KEY='+=y@4tshvapy+13107#wy&*lrwcoeqds+x9@eromgd#4#i5bi('
+DEBUG= True
 
 ALLOWED_HOSTS =[ 'oficenter.ar','www.oficenter.ar','*']
 
