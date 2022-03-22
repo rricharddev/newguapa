@@ -159,6 +159,9 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -167,20 +170,18 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'Tienda/static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-
+#setting de oficenter3   
 
 #STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-#STATIC_ROOT = os.path.join(BASE_DIR, 'Tienda/static')
-
-
-#MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+#STATICFILES_DIRS = [
+    #os.path.join(BASE_DIR, 'Tienda/static')
+#]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 #MEDIA_URL = '/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 
 #PAYPAL_CLIENT_ID= env('PAYPAL_SANDBOX_CLIENT_ID')
@@ -216,13 +217,7 @@ if os.getcwd() == '/app':
     SECURE_PROXI_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
     SECURE_SSL_REDIRECT = True
     DEBUG = False
-
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS = [
-    #os.path.join(BASE_DIR, 'Tienda/static')
-#]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-#MEDIA_URL = '/media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
+ 
 
 

@@ -1,0 +1,31 @@
+{% load static %}
+
+
+
+<nav class="navbar navbar-dark bg-dark">
+ 
+               
+    <img  class="logo"  src="{% static 'Tienda/img/Logo_OFIcenter.png' %}" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'galeria' %}">Galería</a>
+        </li>
+      </ul>
+    
+    </div>
+  </nav>
+
+
+  
