@@ -1,6 +1,5 @@
 {% extends 'Tienda/base.html' %}
 <meta charset="UTF-8">
-<title>ARTICULOS DE LIBRERIA Y COMPUTACION EN PILAR BS AS </title>
 <meta name="google-site-verification" content="u_FN6HwmRaCKPZZU7loZaSyLZUSC4IDUTGYKGaBDR1o" />
 <meta name="keywords" content="libreria,libreria online,libreria pilar,productos de oficina en pilar,
 todo en computacion en pilar,todo en informatica en pilar,
@@ -27,8 +26,30 @@ libreria comercial,productos de libreria,remas de papel,cestos papeleros,expende
 {% endblock %}
 
 {% block content %}
- 
-<div class="slider ">
+<section class="d-flex flex-column justify-content-center align-items-center pt-2  text-center  m-auto" id="intro">
+    <h1 class="pt-3 fs-2 ">Oficenter insumos de libreria y computacion  <span class="text-primary">en Pilar<span/></h1>
+     <p class="p-3  fs-4">
+         <span class="text-primary">Los mejores precios </span> En nuestra tienda encontras todo lo que necesitas       
+     </p>   
+</section>
+    <div class="carousel-slide" id="mainSlider"data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'Tienda/img/flyerescolar.jpg' %}" 
+                 alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+                <img src="{% static 'Tienda/img/entregas.jpg' %}" 
+                 alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+                <img src="{% static 'Tienda/img/monitor.jpg' %}" 
+                 alt="" class="d-block w-100">
+            </div>
+        </div>
+
+    </div>
+{% comment %} <div class="slider ">
      <div>
         <img src="{% static 'Tienda/img/banner/banner2.png' %}"  alt="">  
     </div>
@@ -38,7 +59,7 @@ libreria comercial,productos de libreria,remas de papel,cestos papeleros,expende
     <div>
         <img src="{% static 'Tienda/img/banner/banner4.png' %}" alt="">
     </div>
-</div>
+</div> {% endcomment %}
 
 {% load humanize %}
 

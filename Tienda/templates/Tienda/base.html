@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>ARTICULOS DE LIBRERIA Y COMPUTACION EN PILAR BS AS </title>
+    {% block title %}
+        <title>Oficenter | Libreria y computacion en Pilar </title>
+    {% endblock %} 
+    <link rel="canonical" href="https://oficenter.ar{{ request.path }}">
     <meta name="google-site-verification" content="u_FN6HwmRaCKPZZU7loZaSyLZUSC4IDUTGYKGaBDR1o" />
     <meta name="keywords" content="libreria,libreria online,libreria pilar,productos de oficina en pilar,
     todo en computacion en pilar,todo en informatica en pilar,
@@ -34,7 +37,12 @@
         {% endblock %}
 
     </div>
-
+    <div class="container-boton">
+        <a href="https://wa.me/+541123074288?text=Hola buenas en que podemos ayudarte" target="_blank">
+            <img class="boton" src="{% static 'Tienda/img/whatsapp.png' %}" alt="">
+         
+        </a>
+    </div>
 
     <footer>
         <div class="marcas">
@@ -54,10 +62,13 @@
     <script src="{% static 'Tienda/js/menu.js' %}"></script>
 
     
-
+    
     {% block js %}
 
     {% endblock %}
+
+    
+  
 
 </body>
 </html>
