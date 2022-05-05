@@ -70,7 +70,7 @@ libreria comercial,productos de libreria,remas de papel,cestos papeleros,expende
 
         <div class="contenedor_producto">
             {% if p.imagen %}
-            <img src="{{ p.imagen.url }}" alt="imagen producto">
+            <img src="{{ p.imagen.url  }}" alt="librerias en pilar" class="img-fluid" />
             {% endif %}
             <div class="detalle">
                 <h5>{{ p.marca | capfirst }}</h5>
